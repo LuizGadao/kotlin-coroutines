@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SimpleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-08T19:48:15" hostname="ni-tqi002114" time="0.013">
+  <properties/>
+  <testcase name="firstTest()" classname="SimpleTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
