@@ -20,7 +20,11 @@ fun main() {
         launch {
             println("start get user - thread: ${Thread.currentThread().name}")
             val user = getUserSuspend("999")
-            println(user.name)
+            println(user)
+            println("end get user - thread: ${Thread.currentThread().name}")
+
+            val user1 = getUserSuspend("1000")
+            println(user1)
             println("end get user - thread: ${Thread.currentThread().name}")
         }
 
@@ -32,9 +36,9 @@ fun main() {
         }
     }
 
-    println("finish")
+    //println("finish")
 
-    Thread.sleep(1200)
+    Thread.sleep(2500)
 }
 
 fun getUser(id: String): User {
@@ -58,7 +62,7 @@ fun getUserFromNetworkCallbackWithThrowable(
 
         try {
             val user = User(id, "Carlitos")
-            throw java.lang.IllegalArgumentException("invalid id")
+            throw java.lang.IllegalArgumentException("i njnvalid id")
             //onResponse(user, null)
         } catch (error: Throwable) {
             onResponse(null, error)

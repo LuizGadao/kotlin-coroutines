@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SimpleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-08T19:48:15" hostname="ni-tqi002114" time="0.013">
+<testsuite name="SimpleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-12T15:23:20" hostname="ni-tqi002423" time="0.018">
   <properties/>
-  <testcase name="firstTest()" classname="SimpleTest" time="0.013"/>
+  <testcase name="my factorial test 1()" classname="SimpleTest" time="0.017"/>
+  <testcase name="my factorial test 2()" classname="SimpleTest" time="0.001"/>
+  <testcase name="my factorial test 3()" classname="SimpleTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

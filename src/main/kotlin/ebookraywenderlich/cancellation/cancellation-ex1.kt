@@ -7,8 +7,8 @@ fun main() = runBlocking{
     //cancelAndJoind(this)
     //cancelChildren(this)
     //withTimeout()
-    //withTimeoutExceptionHandler()
-    withTimeoutOrNull()
+    withTimeoutExceptionHandler()
+    //withTimeoutOrNull()
 }
 
 suspend fun withTimeoutOrNull() {

@@ -16,7 +16,8 @@ fun main() = runBlocking {
             print("$it, ")
             delay(100)
             //yield()
-            throw java.lang.IllegalArgumentException("error value")
+            if (it == 5)
+                throw java.lang.IllegalArgumentException("error value")
         }
         println("\njob finish ${Thread.currentThread().name}")
     }

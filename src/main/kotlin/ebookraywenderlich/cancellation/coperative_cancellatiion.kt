@@ -10,10 +10,10 @@ fun main() = runBlocking {
         var nextTime = startTime
         var i = 1
 
-        while (i < 100) {
+        while (i < 10) {
             //if (System.currentTimeMillis() >= nextTime && isActive)
             if (System.currentTimeMillis() >= nextTime) {
-                yield() // if i call yield or delay function o don't need check isActive
+                //yield() // if i call yield or delay function o don't need check isActive
                 println("doing some work: $i")
                 i++
                 nextTime += 500L
@@ -23,6 +23,7 @@ fun main() = runBlocking {
 
     delay(1000)
     println("cancelling")
+    //job.cancelAndJoin()
     job.cancel()
     println("now i can quit")
 
